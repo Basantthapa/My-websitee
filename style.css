@@ -14,3 +14,23 @@ p {
   color: red;
   font-size: 20px;
 }
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Apply animation to elements */
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+p {
+  animation: bounce 2s ease infinite;
+}
+
